@@ -16,9 +16,7 @@
       [:name "TEXT"]
       [:price "REAL"]
       [:description "TEXT"]
-      [:timestamp "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"])
-    (sql/do-commands
-      "CREATE INDEX timestamp_index ON guestbook (timestamp)")))
+      [:timestamp "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"])))
 
 
 (defn read-articals []
